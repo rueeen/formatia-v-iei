@@ -1,0 +1,111 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%; /** La imagen se adapta al tamaño del padre**/
+}
+
+/** Estilos para header **/
+header{
+    background-color: #465B75;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.barra-superior{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.logo{
+    flex-basis: 15%;
+}
+
+.contenedor h1{
+    color: white;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/** Estilos para main **/
+
+main{
+    background-color: #DEE9F7;
+}
+
+.contenido-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    background-color: #ffffff;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 45rem;
+}
+
+.menu input, select{
+    background-color: #e0e0e0;
+    border-style: none;
+    height: 2rem;
+    border-radius: .8rem;
+    margin: .5rem 0 0 0;
+}
+
+.menu legend{
+    margin: 1rem;
+}
+
+.productos{
+    background-color: #ffffff;
+    flex-basis: calc(80% - 1rem);
+    padding: 1rem;
+}
+
+.listado-productos{
+    display: flex;
+}
+
+.card{
+    flex-basis: calc(33.3% - 2rem);
+}
+
+.card a{
+    color: black;
+    text-decoration: none;
+}
+
+span{
+    font-weight: bold;
+}
+
+.card p{
+    margin-top: 0;
+}
+
+.precio{
+    color: #ff6347;
+    font-size: 3rem;
+}
